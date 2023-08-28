@@ -280,5 +280,6 @@ a .btn:active {
     position: relative;
     bottom: 10px;
     margin: 0 7px;
+    font-size: 0.9em;
   }
 }
