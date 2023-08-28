@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 2000px;
+  width: 100%;
+}
+
+.hero {
+  background-image: url(../../img/computer-1873831_1280.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /* background-attachment: fixed; */
+}
+
+.hero h2 {
+  font-size: 1.4em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.hero h2 span {
+  color: whitesmoke;
+}
+
+.center-vertical {
+  display: inline-block;
+  height: 50vh;
+  vertical-align: middle;
+}
+
+.icon-li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-li .icon {
+  height: 30px;
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  margin: 0 10px 0 7px;
+}
+
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  margin: 0;
+  background-color: black;
+}
+
+.introduction {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.education,
+.skill {
+  display: inline-block;
+  text-align: center;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  max-width: 24em;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.intro-img {
+  align-items: center;
+  display: block;
+  margin: auto;
+  max-width: 12em;
+}
+
+.edu-img {
+  max-width: 12em;
+}
+
+.skill-img {
+  max-width: 12em;
+}
+
+.title {
+  text-align: center;
+}
+
+.myporto {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.container .img-portofolio {
+  position: relative;
+  width: 300px;
+  max-width: 300px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  z-index: -1;
+}
+
+.input {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.input input {
+  padding: 5px;
+}
+
+hr {
+  margin-top: 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title-contact {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.pesan {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#textArea {
+  padding: 10px 0 50px 0;
+  display: block;
+}
+
+a .btn {
+  margin-top: 1em;
+  background-color: aquamarine;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.contact {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: row;
+  bottom: 10%;
+  gap: 4rem;
+}
+
+.info {
+  display: none;
+}
+
+.svg {
+  margin-top: 1rem;
+}
+
+.noPhone,
+.nameMail,
+.nameLink {
+  position: relative;
+  bottom: 10px;
+  margin: 0 7px;
+}
+
+.svg a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Kasih animasi dikit buat button kirim:v */
+a .btn:active {
+  transform: translateY(3px);
+}
+
+/* responsive */
+@media (max-width: 576px) {
+  .icon-li .icon {
+    display: none;
+  }
+  ul {
+    text-align: center;
+  }
+
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .contact {
+    position: absolute;
+    margin-left: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    bottom: -40px;
+  }
+
+  .contact svg {
+    width: 20;
+    height: 20;
+  }
+
+  .info {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .svg {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: -20px;
+  }
+
+  .svg a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .noPhone,
+  .nameMail,
+  .nameLink {
+    position: relative;
+    bottom: 10px;
+    margin: 0 7px;
+  }
+}
