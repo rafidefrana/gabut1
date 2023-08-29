@@ -275,15 +275,17 @@ a .btn:active {
   .svg a {
     list-style: none;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
   }
   .noPhone,
   .nameMail,
   .nameLink {
     position: relative;
     bottom: 10px;
-    margin: 0 7px;
-    font-size: 0.9em;
+    margin: 0 5px;
+    font-size: 0.6em;
   }
 
   .navbar ul li a {
@@ -340,7 +342,7 @@ a .btn:active {
   .nameLink {
     position: relative;
     bottom: 4px;
-    margin: 0 7px;
+    margin: 0 5px;
     font-size: 0.9em;
   }
 
