@@ -226,7 +226,73 @@ a .btn:active {
 }
 
 /* responsive */
-@media (max-width: 576px) {
+@media only sreen and (max-width: 576px) {
+  .icon {
+    display: none;
+  }
+  ul {
+    text-align: center;
+  }
+
+  .about,
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .contact {
+    position: absolute;
+    margin-left: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    bottom: -40px;
+  }
+
+  .contact svg {
+    width: 20;
+    height: 20;
+  }
+
+  .info {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .svg {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .svg a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .noPhone,
+  .nameMail,
+  .nameLink {
+    position: relative;
+    bottom: 10px;
+    margin: 0 7px;
+    font-size: 0.9em;
+  }
+
+  .navbar ul li a {
+    font-size: 0.6em;
+  }
+}
+
+@media only sreen and (max-width: 600px) {
   .icon-li .icon {
     display: none;
   }
@@ -234,6 +300,7 @@ a .btn:active {
     text-align: center;
   }
 
+  .about,
   .main-menu {
     flex-direction: column;
   }
@@ -281,5 +348,72 @@ a .btn:active {
     bottom: 10px;
     margin: 0 7px;
     font-size: 0.9em;
+  }
+
+  .navbar ul li a {
+    font-size: 0.6em;
+  }
+}
+
+@media only sreen and (min-width: 600px) {
+  .icon-li .icon {
+    display: none;
+  }
+  ul {
+    text-align: center;
+  }
+
+  .about,
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .contact {
+    position: absolute;
+    margin-left: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    bottom: -40px;
+  }
+
+  .contact svg {
+    width: 20;
+    height: 20;
+  }
+
+  .info {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .svg {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: -20px;
+  }
+
+  .svg a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .noPhone,
+  .nameMail,
+  .nameLink {
+    position: relative;
+    bottom: 10px;
+    margin: 0 7px;
+    font-size: 0.9em;
+  }
+
+  .navbar ul li a {
+    font-size: 0.6em;
   }
 }
