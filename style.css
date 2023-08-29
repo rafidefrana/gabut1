@@ -189,6 +189,7 @@ a .btn {
   flex-direction: row;
   bottom: 10%;
   gap: 4rem;
+  margin-left: 20px;
 }
 
 .info {
